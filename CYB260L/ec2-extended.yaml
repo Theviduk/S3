@@ -1,0 +1,57 @@
+Resources:
+  YAMLtemplate:   # Logical resource name
+    Type: AWS::EC2::Instance
+    Properties:
+      AdditionalInfo: ""
+      Affinity: ""
+      AvailabilityZone: us-east-1a
+      BlockDeviceMappings: 
+        - DeviceName: "/dev/sda1"
+          Ebs:
+            VolumeSize: 8
+      CpuOptions: 
+        CoreCount: 1
+        ThreadsPerCore: 1
+      CreditSpecification: 
+        CpuCredits: "standard"
+      DisableApiTermination: false
+      EbsOptimized: false
+      ElasticGpuSpecifications: []
+      ElasticInferenceAccelerators: []
+      EnclaveOptions: 
+        Enabled: false
+      HibernationOptions: 
+        Configured: false
+      HostId: ""
+      HostResourceGroupArn: ""
+      IamInstanceProfile: ""
+      ImageId: ami-0c02fb55956c7d316
+      InstanceInitiatedShutdownBehavior: stop
+      InstanceType: t2.micro
+      Ipv6AddressCount: 0
+      Ipv6Addresses: []
+      KernelId: ""
+      KeyName: ""
+      LaunchTemplate: 
+        LaunchTemplateId: ""
+      LicenseSpecifications: []
+      MetadataOptions: 
+        HttpTokens: optional
+      Monitoring: false
+      NetworkInterfaces: []
+      PlacementGroupName: ""
+      PrivateDnsNameOptions: {}
+      PrivateIpAddress: ""
+      PropagateTagsToVolumeOnCreation: false
+      RamdiskId: ""
+      SecurityGroupIds: []
+      SecurityGroups: []
+      SourceDestCheck: true
+      SsmAssociations: []
+      SubnetId: subnet-0123456789abcdef0
+      Tags: 
+        - Key: Name
+          Value: MyInstance
+      Tenancy: default
+      UserData: ""
+      Volumes: []
